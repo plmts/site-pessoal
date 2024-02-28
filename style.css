@@ -11,14 +11,32 @@ body {
   height: 100vh;
 }
 
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(237, 226, 108);
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn-contato button:hover {
+  box-shadow: 0 0 8px rgba(237, 226, 108, 0.657);
+  transform: scale(1.05);
+}
+
 .interface {
   max-width: 1280px;
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+}
 
 /* ESTILIZAÇÕES CABEÇALHO */
-
 header {
   padding: 40px 4%;
 }
@@ -31,7 +49,7 @@ header .interface {
 }
 
 header a {
-  color: #777676;
+  color: rgb(237, 226, 108);
   text-decoration: none;
   display: inline-block;
   transition: .2s;
@@ -51,20 +69,50 @@ header nav ul li {
   padding: 0 40px;
 }
 
-header .btn-contato button {
-  padding: 10px 40px;
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
-  border-radius: 30px;
-  background-color: rgb(237, 226, 108);
-  cursor: pointer;
-}
-
-header .btn-contato button:hover {
-  box-shadow: 0 0 8px rgba(237, 226, 108, 0.657);
-}
-
-header .logo img{
+header .logo img {
   max-height: 100px;
+}
+
+/* ESTILO TOPO DO SITE */
+section .topo-do-site {
+  padding: 40px 4%;
+}
+
+section .topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+}
+
+section .txt-topo-site {
+  color: rgb(202, 202, 199); 
+  margin-top: 125px;
+  font-size: 22px;
+}
+
+section .txt-topo-site button {
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+main .img-topo-site img {
+  height: 400px;
+  margin: 1.5rem 0 0 12.7rem;
+  border-radius: 10%;
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+section .txt-topo-site span {
+  color: red;
+  font-size: 25px;
+}
+
+
+@keyframes flutuar {
+  0%{
+    top: 0;
+  }
+  100%{
+    top:30px
+  }
 }

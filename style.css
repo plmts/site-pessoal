@@ -1,0 +1,70 @@
+/* ESTILIZAÇÕES GERAIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(10, 10, 10);
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+/* ESTILIZAÇÕES CABEÇALHO */
+
+header {
+  padding: 40px 4%;
+}
+
+header .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+}
+
+header a {
+  color: #777676;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+
+header a:hover {
+  color: #ffff;
+  transform: scale(1.05);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+header .btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(237, 226, 108);
+  cursor: pointer;
+}
+
+header .btn-contato button:hover {
+  box-shadow: 0 0 8px rgba(237, 226, 108, 0.657);
+}
+
+header .logo img{
+  max-height: 100px;
+}
